@@ -1,0 +1,16 @@
+{
+  "name": "hohm-yoga",
+  "version": "1.0.0",
+  "description": "hOHM Yoga - A simple yoga web application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["yoga", "webapp"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
