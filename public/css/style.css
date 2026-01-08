@@ -35,7 +35,7 @@ body {
 }
 
 .logo h1 {
-    color: #2c5f7c;
+    color: #5a7c5a;
     font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: 2px;
@@ -55,12 +55,12 @@ body {
 }
 
 .nav-links a:hover {
-    color: #2c5f7c;
+    color: #5a7c5a;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #2c5f7c 0%, #4a8fa8 50%, #6ba8c4 100%);
+    background: linear-gradient(135deg, #5a7c5a 0%, #6b8e6b 50%, #8fb38f 100%);
     color: white;
     padding: 120px 20px;
     text-align: center;
@@ -154,7 +154,7 @@ body {
 .about h2 {
     text-align: center;
     font-size: 2.5rem;
-    color: #2c5f7c;
+    color: #5a7c5a;
     margin-bottom: 2rem;
     font-weight: 400;
 }
@@ -179,12 +179,12 @@ body {
 }
 
 .about-content .highlight {
-    background: linear-gradient(120deg, #e8f4f8 0%, #d4e8f0 100%);
+    background: linear-gradient(120deg, #f0f5f0 0%, #e8f0e8 100%);
     padding: 1.5rem;
-    border-left: 4px solid #4a8fa8;
+    border-left: 4px solid #6b8e6b;
     font-size: 1.2rem;
     font-weight: 500;
-    color: #2c5f7c;
+    color: #4a6b4a;
     margin: 2rem 0;
 }
 
@@ -194,7 +194,7 @@ body {
 }
 
 .offerings h3 {
-    color: #2c5f7c;
+    color: #5a7c5a;
     margin-bottom: 2rem;
     font-size: 2rem;
 }
@@ -208,7 +208,7 @@ body {
 }
 
 .offering-tags span {
-    background: #2c5f7c;
+    background: #5a7c5a;
     color: white;
     padding: 0.8rem 1.5rem;
     border-radius: 25px;
@@ -220,7 +220,7 @@ body {
 
 .offering-tags span:hover {
     transform: translateY(-3px);
-    background: #4a8fa8;
+    background: #6b8e6b;
 }
 
 .features {
@@ -244,7 +244,7 @@ body {
 }
 
 .feature-card h3 {
-    color: #2c5f7c;
+    color: #5a7c5a;
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
@@ -262,7 +262,7 @@ body {
 .school h2 {
     text-align: center;
     font-size: 2.5rem;
-    color: #2c5f7c;
+    color: #5a7c5a;
     margin-bottom: 2rem;
     font-weight: 400;
 }
@@ -296,7 +296,7 @@ body {
 }
 
 .school-card h3 {
-    color: #2c5f7c;
+    color: #5a7c5a;
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
@@ -318,18 +318,18 @@ body {
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
-    border: 2px solid #4a8fa8;
+    border: 2px solid #6b8e6b;
     transition: all 0.3s;
 }
 
 .program-item:hover {
-    background: #4a8fa8;
+    background: #6b8e6b;
     color: white;
     transform: translateY(-5px);
 }
 
 .program-item h4 {
-    color: #2c5f7c;
+    color: #5a7c5a;
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
@@ -355,7 +355,7 @@ body {
 .classes h2 {
     text-align: center;
     font-size: 2.5rem;
-    color: #2c5f7c;
+    color: #5a7c5a;
     margin-bottom: 1rem;
     font-weight: 400;
 }
