@@ -35,9 +35,10 @@ body {
 }
 
 .logo h1 {
-    color: #4a7c59;
+    color: #2c5f7c;
     font-size: 1.8rem;
     font-weight: 600;
+    letter-spacing: 2px;
 }
 
 .nav-links {
@@ -54,32 +55,61 @@ body {
 }
 
 .nav-links a:hover {
-    color: #4a7c59;
+    color: #2c5f7c;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2c5f7c 0%, #4a8fa8 50%, #6ba8c4 100%);
     color: white;
     padding: 120px 20px;
     text-align: center;
-    min-height: 500px;
+    min-height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><path d="M0,300 Q300,200 600,300 T1200,300 L1200,600 L0,600 Z" fill="rgba(255,255,255,0.05)"/></svg>');
+    opacity: 0.3;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
 }
 
 .hero-content h2 {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     animation: fadeInUp 1s ease;
+    font-weight: 400;
+    line-height: 1.2;
 }
 
 .hero-content p {
     font-size: 1.3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     opacity: 0.95;
     animation: fadeInUp 1s ease 0.2s both;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    font-style: italic;
+    opacity: 0.9;
+    margin-top: 1rem;
+    animation: fadeInUp 1s ease 0.4s both;
 }
 
 @keyframes fadeInUp {
@@ -96,8 +126,8 @@ body {
 /* Buttons */
 .btn-primary {
     display: inline-block;
-    padding: 12px 30px;
-    background: #4a7c59;
+    padding: 14px 35px;
+    background: #2c5f7c;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -106,12 +136,13 @@ body {
     border: none;
     cursor: pointer;
     font-size: 1rem;
+    letter-spacing: 0.5px;
 }
 
 .btn-primary:hover {
-    background: #3a6347;
+    background: #4a8fa8;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(74, 124, 89, 0.3);
+    box-shadow: 0 5px 15px rgba(44, 95, 124, 0.4);
 }
 
 /* About Section */
@@ -123,16 +154,73 @@ body {
 .about h2 {
     text-align: center;
     font-size: 2.5rem;
-    color: #4a7c59;
+    color: #2c5f7c;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.about-content p {
+    margin-bottom: 1.5rem;
+}
+
+.about-content .lead {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #333;
     margin-bottom: 2rem;
 }
 
-.about > .container > p {
+.about-content .highlight {
+    background: linear-gradient(120deg, #e8f4f8 0%, #d4e8f0 100%);
+    padding: 1.5rem;
+    border-left: 4px solid #4a8fa8;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #2c5f7c;
+    margin: 2rem 0;
+}
+
+.offerings {
+    margin-top: 4rem;
     text-align: center;
-    font-size: 1.1rem;
-    color: #666;
-    max-width: 800px;
-    margin: 0 auto 3rem;
+}
+
+.offerings h3 {
+    color: #2c5f7c;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.offering-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.offering-tags span {
+    background: #2c5f7c;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: transform 0.3s;
+}
+
+.offering-tags span:hover {
+    transform: translateY(-3px);
+    background: #4a8fa8;
 }
 
 .features {
@@ -156,13 +244,106 @@ body {
 }
 
 .feature-card h3 {
-    color: #4a7c59;
+    color: #2c5f7c;
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
 
 .feature-card p {
     color: #666;
+}
+
+/* hOHM School Section */
+.school {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #f0f7fa 0%, #e8f4f8 100%);
+}
+
+.school h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c5f7c;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.school-intro {
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #555;
+    text-align: center;
+}
+
+.school-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.school-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.school-card:hover {
+    transform: translateY(-5px);
+}
+
+.school-card h3 {
+    color: #2c5f7c;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.school-card p {
+    color: #666;
+    line-height: 1.7;
+}
+
+.school-programs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.program-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #4a8fa8;
+    transition: all 0.3s;
+}
+
+.program-item:hover {
+    background: #4a8fa8;
+    color: white;
+    transform: translateY(-5px);
+}
+
+.program-item h4 {
+    color: #2c5f7c;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.program-item:hover h4 {
+    color: white;
+}
+
+.program-item p {
+    color: #666;
+}
+
+.program-item:hover p {
+    color: white;
 }
 
 /* Classes Section */
@@ -174,8 +355,19 @@ body {
 .classes h2 {
     text-align: center;
     font-size: 2.5rem;
-    color: #4a7c59;
+    color: #2c5f7c;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.section-intro {
+    text-align: center;
+    color: #666;
+    font-size: 1.1rem;
     margin-bottom: 3rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .class-grid {
@@ -185,9 +377,9 @@ body {
 }
 
 .class-card {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2c5f7c 0%, #4a8fa8 100%);
     color: white;
-    padding: 2rem;
+    padding: 2.5rem;
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s;
@@ -196,25 +388,96 @@ body {
 
 .class-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 25px rgba(44, 95, 124, 0.3);
 }
 
 .class-card h3 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
+    font-weight: 400;
 }
 
 .class-card p {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     opacity: 0.95;
+    line-height: 1.6;
 }
 
-.class-time {
+.class-type {
     display: inline-block;
     background: rgba(255,255,255,0.2);
-    padding: 5px 15px;
+    padding: 8px 20px;
     border-radius: 20px;
     font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Retreats Section */
+.retreats {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #f0f7fa 0%, #e8f4f8 100%);
+}
+
+.retreats h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c5f7c;
+    margin-bottom: 3rem;
+    font-weight: 400;
+}
+
+.retreat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.retreat-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.retreat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+}
+
+.retreat-card h3 {
+    color: #2c5f7c;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.retreat-card p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 12px 30px;
+    background: transparent;
+    color: #2c5f7c;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s;
+    border: 2px solid #2c5f7c;
+}
+
+.btn-secondary:hover {
+    background: #2c5f7c;
+    color: white;
+    transform: translateY(-2px);
 }
 
 /* Contact Section */
@@ -226,8 +489,9 @@ body {
 .contact h2 {
     text-align: center;
     font-size: 2.5rem;
-    color: #4a7c59;
+    color: #2c5f7c;
     margin-bottom: 1rem;
+    font-weight: 400;
 }
 
 .contact > .container > p {
@@ -258,15 +522,35 @@ body {
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
-    border-color: #4a7c59;
+    border-color: #2c5f7c;
+}
+
+.contact-note {
+    text-align: center;
+    margin-top: 2rem;
+    font-style: italic;
+    color: #2c5f7c;
+    font-size: 1.1rem;
 }
 
 /* Footer */
 .footer {
-    background: #333;
+    background: #1a3a4a;
     color: white;
     text-align: center;
-    padding: 2rem 20px;
+    padding: 3rem 20px;
+}
+
+.footer p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.footer-note {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    font-style: italic;
 }
 
 /* Responsive Design */
@@ -285,7 +569,25 @@ body {
     }
     
     .features,
-    .class-grid {
+    .class-grid,
+    .school-features,
+    .retreat-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .school-programs {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.95rem;
     }
 }
